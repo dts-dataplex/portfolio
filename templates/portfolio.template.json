@@ -1,0 +1,245 @@
+{
+  "$schema": "https://example.com/career-schema/v1.0.0",
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-27",
+    "canonical": true
+  },
+  
+  "basics": {
+    "name": "Full Name",
+    "label": "Professional Title",
+    "email": "email@example.com",
+    "phone": "+1-555-123-4567",
+    "url": "https://personalsite.com",
+    "summary": "Professional summary paragraph...",
+    "location": {
+      "city": "San Francisco",
+      "region": "California", 
+      "countryCode": "US"
+    },
+    "profiles": [
+      {"network": "LinkedIn", "url": "https://linkedin.com/in/username"},
+      {"network": "GitHub", "url": "https://github.com/username"}
+    ]
+  },
+
+  "work": [{
+    "id": "work_001",
+    "organizationId": "org_001",
+    "name": "Company Name",
+    "position": "Job Title",
+    "employmentType": "full-time",
+    "url": "https://company.com",
+    "location": "San Francisco, CA",
+    "startDate": "2022-01",
+    "endDate": null,
+    "isCurrent": true,
+    "summary": "Role description...",
+    "highlights": [
+      "Achievement with quantified impact",
+      "Led team of 5 engineers"
+    ],
+    "technologies": ["Python", "AWS", "Kubernetes"],
+    "tags": ["backend", "distributed-systems", "leadership"],
+    "relevantFor": ["senior-engineer", "tech-lead", "engineering-manager"],
+    "promotedFrom": null,
+    "transitionType": null
+  }],
+
+  "contracts": [{
+    "id": "contract_001",
+    "type": "consulting",
+    "businessName": "Your Consulting LLC",
+    "startDate": "2020-01",
+    "endDate": "2022-01",
+    "summary": "Independent consulting in data engineering",
+    "engagements": [{
+      "clientName": "Client A",
+      "clientIndustry": "fintech",
+      "isConfidential": false,
+      "engagementType": "project",
+      "duration": "6 months",
+      "summary": "Built real-time data pipeline",
+      "highlights": ["Reduced latency by 80%"],
+      "technologies": ["Kafka", "Spark", "AWS"]
+    }],
+    "tags": ["consulting", "data-engineering"]
+  }],
+
+  "compensation": [{
+    "workId": "work_001",
+    "effectiveDate": "2024-01",
+    "baseSalary": {
+      "value": 185000,
+      "currency": "USD",
+      "period": "year"
+    },
+    "bonus": {
+      "target": 30000,
+      "currency": "USD",
+      "type": "annual"
+    },
+    "equity": {
+      "type": "RSU",
+      "grantValue": 200000,
+      "vestingSchedule": "4 years with 1-year cliff"
+    },
+    "_visibility": "private"
+  }],
+
+  "projects": [{
+    "id": "project_001",
+    "name": "Project Name",
+    "description": "What the project does...",
+    "url": "https://project.com",
+    "repository": "https://github.com/user/project",
+    "startDate": "2023-06",
+    "endDate": "2023-12",
+    "highlights": ["Won hackathon", "1000+ GitHub stars"],
+    "technologies": ["React", "Node.js", "PostgreSQL"],
+    "roles": ["Lead Developer", "Designer"],
+    "associatedWork": "work_001",
+    "type": "personal",
+    "tags": ["open-source", "web-app", "ai"]
+  }],
+
+  "education": [{
+    "id": "edu_001",
+    "institution": "University Name",
+    "url": "https://university.edu",
+    "area": "Computer Science",
+    "studyType": "Bachelor of Science",
+    "startDate": "2010-09",
+    "endDate": "2014-06",
+    "score": "3.8 GPA",
+    "honors": ["Magna Cum Laude", "Dean's List"],
+    "courses": ["Machine Learning", "Distributed Systems"],
+    "thesis": "Thesis title if applicable"
+  }],
+
+  "certificates": [{
+    "id": "cert_001",
+    "name": "AWS Solutions Architect Professional",
+    "issuer": "Amazon Web Services",
+    "date": "2024-03",
+    "expirationDate": "2027-03",
+    "credentialId": "ABC123XYZ",
+    "url": "https://verify.aws/credential",
+    "tags": ["cloud", "aws", "architecture"]
+  }],
+
+  "awards": [{
+    "id": "award_001",
+    "title": "Employee of the Year",
+    "date": "2023-12",
+    "awarder": "Company Name",
+    "summary": "Recognized for technical leadership",
+    "type": "professional",
+    "url": "https://announcement.url"
+  }],
+
+  "publications": [{
+    "id": "pub_001",
+    "name": "Publication Title",
+    "publisher": "Journal/Conference Name",
+    "releaseDate": "2023-06",
+    "url": "https://doi.org/xxxxx",
+    "summary": "Abstract or description",
+    "type": "conference-paper",
+    "authors": ["Your Name", "Co-author Name"],
+    "tags": ["machine-learning", "nlp"]
+  }],
+
+  "presentations": [{
+    "id": "pres_001",
+    "title": "Talk Title",
+    "event": "Conference Name 2024",
+    "date": "2024-05-15",
+    "location": "San Francisco, CA",
+    "type": "conference-talk",
+    "audience": "500+ attendees",
+    "url": "https://conference.com/talk",
+    "slidesUrl": "https://slides.com/deck",
+    "videoUrl": "https://youtube.com/watch",
+    "summary": "Talk description",
+    "tags": ["technical", "architecture"]
+  }],
+
+  "volunteer": [{
+    "id": "vol_001",
+    "organization": "Code for America",
+    "position": "Technical Mentor",
+    "url": "https://codeforamerica.org",
+    "startDate": "2021-01",
+    "endDate": "2023-06",
+    "summary": "Mentored developers on civic tech projects",
+    "highlights": ["Mentored 20+ developers"],
+    "commitmentLevel": "weekly",
+    "tags": ["mentorship", "civic-tech"]
+  }],
+
+  "skills": [{
+    "name": "Python",
+    "category": "programming-language",
+    "level": "expert",
+    "yearsExperience": 8,
+    "lastUsed": "2025-11",
+    "keywords": ["Django", "FastAPI", "pandas", "asyncio"]
+  },
+  {
+    "name": "Cloud Architecture",
+    "category": "infrastructure",
+    "level": "advanced",
+    "yearsExperience": 5,
+    "lastUsed": "2025-11",
+    "keywords": ["AWS", "GCP", "Kubernetes", "Terraform"]
+  }],
+
+  "languages": [{
+    "language": "English",
+    "fluency": "native"
+  },
+  {
+    "language": "Spanish", 
+    "fluency": "professional",
+    "cefrLevel": "B2"
+  }],
+
+  "interests": [{
+    "name": "Open Source",
+    "keywords": ["Linux", "CNCF projects"]
+  }],
+
+  "references": [{
+    "name": "Reference Name",
+    "relationship": "Former Manager at Company",
+    "email": "ref@email.com",
+    "phone": "+1-555-000-0000",
+    "_visibility": "recruiter"
+  }],
+
+  "metadata": {
+    "tags": ["software-engineering", "backend", "data", "leadership"],
+    "industries": ["fintech", "healthcare", "enterprise-saas"],
+    "targetRoles": ["senior-engineer", "staff-engineer", "tech-lead"],
+    "workPreferences": {
+      "remote": true,
+      "hybrid": true,
+      "onsite": false,
+      "willingToRelocate": ["New York", "Seattle"],
+      "visaStatus": "US Citizen"
+    }
+  },
+
+  "exportProfiles": {
+    "public": {
+      "include": ["basics", "work", "education", "skills", "projects"],
+      "exclude": ["basics.phone", "compensation", "references"]
+    },
+    "full": {
+      "include": ["*"],
+      "exclude": ["compensation"]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+# Resume files (contain PII)
+input/resumes/*.pdf
+input/resumes/*.doc
+input/resumes/*.docx
+input/resumes/*.txt
+input/resumes/*.rtf
+
+# Job postings (may contain company-specific data)
+input/jobs/**/*
+!input/jobs/**/.gitkeep
+!input/jobs/**/README.md
+
+# Generated output (contains PII)
+output/**/*
+!output/**/.gitkeep
+!output/**/README.md
+
+# Portfolio data file (contains real PII)
+portfolio.json
+
+# Agent system output (contains PII and application data)
+.agent-system/applications.json
+.agent-system/config.json
+.agent-system/output/**/*
+.agent-system/logs/**/*
+.agent-system/queue/**/*
+.agent-system/human-review/**/*
+!.agent-system/output/**/.gitkeep
+!.agent-system/logs/**/.gitkeep
+!.agent-system/queue/**/.gitkeep
+!.agent-system/human-review/**/.gitkeep
+.agent-system/status/system.json
+
+# System files
+.DS_Store
+**/.DS_Store
+
+# Ignore files
+**.ignore
+
+# Local settings
+.claude/settings.local.json
